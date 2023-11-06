@@ -1,0 +1,10 @@
+DIR=$1
+
+cd $DIR
+echo "current directory"
+pwd
+rm ./Source/prog.f90
+
+dos2unix ./Source/*
+cat ./Source/main.f90 <(echo) ./Source/import_salary.f90 <(echo) ./Source/salgrowth.f90 <(echo) ./Source/fit.f90 <(echo) ./Source/ran1.f90 <(echo) ./Source/utilities.f90 <(echo) > ./Source/prog.f90
+

@@ -1,0 +1,5 @@
+DIR=$1
+#date=$(date+"%m/%d/%yyyy")
+#hour=$(date+"%T")
+#echo "Current date and time" "$date $hour" >> ../out.$DIR
+echo "working directory: $DIR" >> ../out.$DIR
